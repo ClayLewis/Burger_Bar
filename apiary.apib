@@ -8,7 +8,7 @@ Notes related resources of the **Notes API**
 
 ## Notes Collection [/notes]
 ### List all Notes [GET]
-+ Response 200 (application/json)
++ Response 200 (api/json)
 
         [{
           "id": 1, "title": "Jogging in park"
@@ -17,11 +17,11 @@ Notes related resources of the **Notes API**
         }]
 
 ### Create a Note [POST]
-+ Request (application/json)
++ Request (api/json)
 
         { "title": "Buy cheese and bread for breakfast." }
 
-+ Response 201 (application/json)
++ Response 201 (api/json)
 
         { "id": 3, "title": "Buy cheese and bread for breakfast." }
 
@@ -32,7 +32,7 @@ A single Note object with all its details
     + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
 
 ### Retrieve a Note [GET]
-+ Response 200 (application/json)
++ Response 200 (api/json)
 
     + Header
 
