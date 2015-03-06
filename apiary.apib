@@ -1,13 +1,13 @@
 FORMAT: 1A
 
-# InsightMCapi
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# Insight Inc. Burger Bar 
+This API was built to familirize ourselves with apiary.io and 
 
-# Group Notes
-Notes related resources of the **Notes API**
+# Group Burger Bar
+Burger Bar related resources of the **Insight Inc. Burger Bar API**
 
-## Notes Collection [/notes]
-### List all Notes [GET]
+## Burger Components [./api/index.php/]
+### List all Meats [GET]
 + Response 200 (application/json)
 
         [{
@@ -16,16 +16,9 @@ Notes related resources of the **Notes API**
           "id": 2, "title": "Pick-up posters from post-office"
         }]
 
-### Create a Note [POST]
-+ Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
 
-+ Response 201 (application/json)
-
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
-
-## Note [/notes/{id}]
+## Indivdual Components [/notes/{id}]
 A single Note object with all its details
 
 + Parameters
