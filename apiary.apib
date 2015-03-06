@@ -94,17 +94,11 @@ Burger Bar related resources of the **Insight Inc. Burger Bar API**
           "name": "Onion Rings", "price": 1
         }]
 
-## Get Last Order [/api/index.php/createUserAccount]
+## Create Account [/api/index.php/createUserAccount]
 ### Create an account [POST]
 + Response 200 (application/json)
 
-    + Header
-
-            X-My-Header: The Value
-
-    + Body
-
-            { "id": 2, "title": "Pick-up posters from post-office" }
+            { "query": "INSERT INTO User (idUser, fName, lName, email, password, ccProvider, ccNumber) VALUES ($newID, '$fName', '$lName', '$email', '$password', '$CCprovider', $CCNumber));" }
 
 ### Remove a Note [DELETE]
 + Response 204
